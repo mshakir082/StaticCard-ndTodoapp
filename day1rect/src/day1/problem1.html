@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem1</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="root2"></div>
+    <script type="text/babel">
+    //     const li1 = React.createElement('li',null,"Andriod");
+    //     const li2 = React.createElement('li',null,'Blckberry');
+    //     const li3 = React.createElement('li',null,'iPhone');
+    //     const li4 = React.createElement('li',null,'Windows Phone');
+    //     const rowDiv1=React.createElement('div',{class:"firstDiv"},React.createElement('ul',null,[li1,li2,li3,li4]));
+    //     const container1=document.getElementById('root');
+    //     const root=ReactDOM.createRoot(container1);
+    //   root.render(divElement) 
+        const divElement=(
+            <div id="firstDiv" >
+                <h1> Mobile Operating System</h1>
+                <ul>
+                    <li>Android</li>
+                    <li>Blckberry</li>
+                    <li>iPhone</li>
+                    <li>Windows Phone</li>
+                  
+                </ul>
+           </div>
+          );
+           const divElement1=(
+            <div id="secondDiv">
+                <h1> Mobile Manufacturers </h1>
+                <ul>
+                    <li>Samsung</li>
+                    <li>HTC</li>
+                    <li>Micromax</li>
+                    <li>Apple </li>
+                  
+                </ul>
+           </div>
+           )
+        const container=document.getElementById('root');
+        const root=ReactDOM.createRoot(container);
+        root.render(divElement);
+        
+        const container2=document.getElementById('root2');
+        const root2=ReactDOM.createRoot(container2);
+        root2.render(divElement1)
+    </script>
+
+</body>
+</html>
