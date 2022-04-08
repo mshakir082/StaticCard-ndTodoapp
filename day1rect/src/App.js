@@ -27,8 +27,8 @@ function App() {
       
     // </div>
     // <EmployeeDetails/>
-    // <Counter/>
-   <TodoList/>
+    <Counter/>
+  //  <TodoList/>
   );
 }
 
